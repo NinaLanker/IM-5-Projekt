@@ -46,3 +46,15 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
     // Meldung anzeigen (kann durch tatsächlichen Datenversand ersetzt werden)
     alert("Vielen Dank für deine Anmeldung!");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var body = document.body;
+
+    body.addEventListener("click", function (event) {
+        // Überprüfe, ob das geklickte Element der Body selbst ist (nicht seine Kinder)
+        if (event.target === body) {
+            // Navigiere zur index.html-Seite
+            window.location.href = "https://232876-2.web.fhgr.ch/index.html";
+        }
+    });
+});

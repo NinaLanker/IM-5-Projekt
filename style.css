@@ -10,16 +10,6 @@
     height: 500px;
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 500px; 
-    left: 0;
-    width: 100%;
-    height: 600px;
-    background-color: #ffffff; 
-    background-attachment: fixed;
-}
 
 body, p, h1, nav a {
     color: #333; 
@@ -111,7 +101,7 @@ nav a {
     text-align: center;
     font-family: "Akkurat Pro", sans-serif; /* Verwendete Schriftart */
     font-size: 16px; /* Schriftgröße der Links */
-    margin: 90px;
+    margin: 200px;
     z-index: 1001; 
 }
 
@@ -139,13 +129,99 @@ button {
     border: none;
     cursor: pointer;
 }
+body.page-contact #content {
+    padding: 40px;
+}
 
+body.page-contact #content h1 {
+    color: #333;
+    font-family: "Akkurat Pro", sans-serif;
+}
+
+body.page-contact #content p {
+    color: #555;
+    font-family: "Akkurat Pro", sans-serif;
+}
+
+body.page-contact #contact-form {
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: "Akkurat Pro", sans-serif;
+}
+
+body.page-contact #contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Akkurat Pro", sans-serif;
+}
+
+body.page-contact #contact-form input,
+body.page-contact #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    font-family: "Akkurat Pro", sans-serif;
+}
+
+body.page-contact #contact-form button {
+    background-color: #ADD8E6;
+    color: white;
+    padding: 0px 50px;
+    border: none;
+    cursor: pointer;
+    font-family: "Akkurat Pro", sans-serif;
+}
+
+.ueberuns {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.ueberuns h1 {
+    color: #333;
+    font-family: "Akkurat Pro", sans-serif;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.event h2 {
+    color: #ADD8E6;
+    font-family: "Akkurat Pro", sans-serif;
+}
+
+/* Medienabfragen für responsive Gestaltung */
+@media (max-width: 768px) {
+    .ueberuns {
+        padding: 10px;
+    }
+}
+body.page-contact #contact-form button:hover {
+    background-color: #FF0000;
+    font-family: "Akkurat Pro", sans-serif;
+}
 #mein-button:hover {
     background-color: #ADD8E6; /* Beispielhafte Farbänderung */
     color: #FF0000;
+    font-family: "Akkurat Pro", sans-serif;
   }
 
-
+  body.page-contact footer {
+    display: none;
+}
+body.page-ueberuns footer {
+    display: none;
+}
 /* Footer-Container mit flexibler Anordnung */
 body {
     display: flex;
@@ -158,7 +234,7 @@ footer {
     background-color: #333;
     color: #fff;
     font-family: "Akkurat Pro", sans-serif; 
-    padding: 2px; 
+    padding: 40px; 
     display: flex;
     justify-content: space-between;
     z-index: 1001;
@@ -180,6 +256,4 @@ h2 {
 p {
     margin: 0.5em 0;
 }
-@media (max-width: 768px) {
-    /* CSS-Regeln für kleine Bildschirme */
-}
+
