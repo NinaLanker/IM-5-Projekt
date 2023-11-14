@@ -1,25 +1,22 @@
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <header>
-        <div class="menubutton">&#9776;</div>
-        <nav>
-
-        <nav>
-          <ul class="menu">
-              <li><a href="ueber-uns.html">Über uns</a></li>
-              <li><a href="buchen.html">Buchen</a></li>
-              <li><a href="entdecken.html">Entdecken</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
-          </ul>
-        </nav>
-      </header>
-
+</head>
 <body class="page-contact">
-    
+
+    <header>
+        <a href="index.html" class="back-to-home">&#9666; Zurück zur Startseite</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="ueber-uns.html">Erlebnisse</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div id="content">
         <h1>Kontakt</h1>
@@ -37,10 +34,12 @@
 
             <button type="submit">Absenden</button>
         </form>
+        <div id="confirmation-message" class="hidden">
+            Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.
+        </div>
     </div>
 
-</body>
-
-<footer></footer>
+    <footer></footer>
     <script src="script.js"></script>
+</body>
 </html>

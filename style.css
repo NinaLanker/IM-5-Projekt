@@ -10,7 +10,6 @@
     height: 500px;
 }
 
-
 body, p, h1, nav a {
     color: #333; 
 }
@@ -40,7 +39,7 @@ nav a {
     font-size: 16px; /* Schriftgröße der Links */
 }
 
-/* Stil für den gemeinsamen Container von Hintergrundbild und Button */
+
 #illu {
     position: absolute;
     top: 50%;
@@ -49,6 +48,7 @@ nav a {
     width: 80%; 
     margin-bottom: 40px;
     background-attachment: fixed;
+    
 }
 
 #illu img {
@@ -71,7 +71,13 @@ nav a {
     transform: translate(-50%, -50%); /* Zentriert den Button */
     cursor: pointer;
 }
-
+.custom-button3 {
+    position: absolute; /* Absolute Positionierung im Container */
+    top: 80%; /* Vertikal in der Mitte des Containers */
+    left: 45%; /* Horizontal in der Mitte des Containers */
+    transform: translate(-50%, -50%); /* Zentriert den Button */
+    cursor: pointer;
+}
 /* Stil für das Popup-Fenster (versteckt es anfänglich) */
 #popupContainer {
     display: none;
@@ -86,6 +92,17 @@ nav a {
 }
 
 #popupContainer2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    font-family: "Akkurat Pro", sans-serif;
+    padding: 20px;
+    z-index: 1000; /* Über dem Inhalt anzeigen */
+}
+#popupContainer3 {
     display: none;
     position: fixed;
     top: 50%;
@@ -172,6 +189,12 @@ body.page-contact #contact-form button {
     cursor: pointer;
     font-family: "Akkurat Pro", sans-serif;
 }
+#confirmation-message {
+    color: green;
+    font-weight: bold;
+    font-family: "Akkurat Pro", sans-serif;
+    margin-top: 10px;
+}
 
 .ueberuns {
     max-width: 800px;
@@ -187,12 +210,14 @@ body.page-contact #contact-form button {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-family: "Akkurat Pro", sans-serif;
 }
 
 .event {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 8px;
+    font-family: "Akkurat Pro", sans-serif;
 }
 
 .event h2 {
@@ -202,16 +227,14 @@ body.page-contact #contact-form button {
 
 /* Medienabfragen für responsive Gestaltung */
 @media (max-width: 768px) {
-    .ueberuns {
-        padding: 10px;
-    }
 }
+
 body.page-contact #contact-form button:hover {
     background-color: #FF0000;
     font-family: "Akkurat Pro", sans-serif;
 }
 #mein-button:hover {
-    background-color: #ADD8E6; /* Beispielhafte Farbänderung */
+    background-color: #ADD8E6; 
     color: #FF0000;
     font-family: "Akkurat Pro", sans-serif;
   }
@@ -240,20 +263,23 @@ footer {
     z-index: 1001;
 }
 
-/* Stil für die Anreise-Info */
-#anreise, #kontakt, #info {
-    flex: 1; 
-    margin-right: 10px; 
-    text-align: center;
-}
-
-/* Stil für Überschriften */
-h2 {
-    font-size: 1.2em;
-}
 
 /* Stil für Absatztext */
 p {
     margin: 0.5em 0;
 }
 
+.hidden {
+    display: none;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #ADD8E6;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
