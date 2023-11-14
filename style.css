@@ -1,0 +1,183 @@
+body {
+    background-color: #ADD8E6; 
+    background-image: 
+    url('wolken.gif');
+     background-attachment: fixed;
+    background-repeat: no-repeat;   
+    background-position: center top; 
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 500px; 
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: #ffffff; 
+    background-attachment: fixed;
+}
+
+body, p, h1, nav a {
+    color: #333; 
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: #ADD8E6; /* Hintergrundfarbe des Headers */
+    padding: 0px; /* Innenabstand des Headers */
+    text-align: center; /* Zentrierte Ausrichtung des Texts */
+}
+
+/* Stil für die Navigationselemente im Header */
+nav ul {
+    list-style: none; /* Entfernt Aufzählungspunkte */
+    padding: 0; /* Entfernt Innenabstand des Listencontainers */
+}
+
+nav li {
+    display: inline; /* Elemente nebeneinander darstellen */
+    margin: 0 10px; /* Abstand zwischen den Elementen */
+}
+
+nav a {
+    text-decoration: none; /* Entfernt die Unterstreichung von Links */
+    color: #fff; /* Textfarbe der Links */
+    font-family: "Akkurat Pro", sans-serif; /* Verwendete Schriftart */
+    font-size: 16px; /* Schriftgröße der Links */
+}
+
+/* Stil für den gemeinsamen Container von Hintergrundbild und Button */
+#backgroundContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    margin-bottom: 40px;
+    background-attachment: fixed;
+}
+
+#backgroundContainer img {
+    width: 100%; /* Vollständige Breite des Containers */
+    height: auto; /* Behalte das Seitenverhältnis bei */
+}
+
+.custom-button {
+    position: absolute; /* Absolute Positionierung im Container */
+    top: 12%; /* Vertikal in der Mitte des Containers */
+    left: 49%; /* Horizontal in der Mitte des Containers */
+    transform: translate(-50%, -50%); /* Zentriert den Button */
+    cursor: pointer;
+}
+
+.custom-button2 {
+    position: absolute; /* Absolute Positionierung im Container */
+    top: 75%; /* Vertikal in der Mitte des Containers */
+    left: 65%; /* Horizontal in der Mitte des Containers */
+    transform: translate(-50%, -50%); /* Zentriert den Button */
+    cursor: pointer;
+}
+
+/* Stil für das Popup-Fenster (versteckt es anfänglich) */
+#popupContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    font-family: "Akkurat Pro", sans-serif;
+    padding: 20px;
+    z-index: 1000; /* Über dem Inhalt anzeigen */
+}
+
+#popupContainer2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    font-family: "Akkurat Pro", sans-serif;
+    padding: 20px;
+    z-index: 1000; /* Über dem Inhalt anzeigen */
+}
+
+.newsletter-form {
+    text-align: center;
+    font-family: "Akkurat Pro", sans-serif; /* Verwendete Schriftart */
+    font-size: 16px; /* Schriftgröße der Links */
+    margin: 90px;
+    z-index: 1001; 
+}
+
+/* Stil für den Eingabebereich und den Abonnieren-Button */
+#newsletter-form {
+    background-color: rgba(204, 204, 204, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#email {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ADD8E6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#mein-button:hover {
+    background-color: #ADD8E6; /* Beispielhafte Farbänderung */
+    color: #FF0000;
+  }
+
+
+/* Footer-Container mit flexibler Anordnung */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    font-family: "Akkurat Pro", sans-serif; 
+    padding: 2px; 
+    display: flex;
+    justify-content: space-between;
+    z-index: 1001;
+}
+
+/* Stil für die Anreise-Info */
+#anreise, #kontakt, #info {
+    flex: 1; 
+    margin-right: 10px; 
+    text-align: center;
+}
+
+/* Stil für Überschriften */
+h2 {
+    font-size: 1.2em;
+}
+
+/* Stil für Absatztext */
+p {
+    margin: 0.5em 0;
+}
+@media (max-width: 768px) {
+    /* CSS-Regeln für kleine Bildschirme */
+}
