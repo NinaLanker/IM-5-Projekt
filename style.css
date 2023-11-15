@@ -76,6 +76,13 @@ nav a {
     transform: translate(-50%, -50%); 
     cursor: pointer;
 }
+.custom-button4 {
+    position: absolute; 
+    top: 45%; 
+    left: 55%; 
+    transform: translate(-50%, -50%); 
+    cursor: pointer;
+}
 
 #popupContainer {
     display: none;
@@ -112,6 +119,17 @@ nav a {
     z-index: 1000; 
 }
 
+#popupContainer4 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    font-family: "Akkurat Pro", sans-serif;
+    padding: 20px;
+    z-index: 1000; 
+}
 
 body.page-contact #content {
     padding: 40px;

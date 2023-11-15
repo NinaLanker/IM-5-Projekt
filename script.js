@@ -33,7 +33,7 @@ closeButton2.addEventListener("click", function () {
 document.addEventListener("DOMContentLoaded", function () {
     var popupButton3 = document.getElementById("popupButton3");
     var popupContainer3 = document.getElementById("popupContainer3");
-    var closeButton2 = document.getElementById("closeButton3");
+    var closeButton3 = document.getElementById("closeButton3");
     
     // Füge einen Klick-Event-Handler zum Bild hinzu
     popupButton3.addEventListener("click", function () {
@@ -45,6 +45,22 @@ document.addEventListener("DOMContentLoaded", function () {
         popupContainer3.style.display = "none";
         });
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var popupButton4 = document.getElementById("popupButton4");
+        var popupContainer4 = document.getElementById("popupContainer4");
+        var closeButton4 = document.getElementById("closeButton4");
+        
+        // Füge einen Klick-Event-Handler zum Bild hinzu
+        popupButton4.addEventListener("click", function () {
+            popupContainer4.style.display = "block";
+        });
+        
+        // Füge einen Klick-Event-Handler zum Schließen-Button hinzu
+        closeButton4.addEventListener("click", function () {
+            popupContainer4.style.display = "none";
+            });
+        });
 
     document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("newsletter-form").addEventListener("submit", function (event) {
