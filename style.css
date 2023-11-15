@@ -1,9 +1,7 @@
 #backgroundContainer {
     background-color: #ADD8E6; 
-    background-image: 
-    url('wolken.gif');
-     background-attachment: fixed;
-    background-repeat: no-repeat;   
+    background-image: url('wolken.gif');
+     background-attachment: fixed;  
     background-position: center top; 
     background-size: cover;
     width: 100%;
@@ -12,31 +10,32 @@
 
 body, p, h1, nav a {
     color: #333; 
+    font-family: "Akkurat Pro", sans-serif; 
+    font-size: 20px; 
 }
 header {
     position: sticky;
     top: 0;
-    background-color: #ADD8E6; /* Hintergrundfarbe des Headers */
-    padding: 0px; /* Innenabstand des Headers */
-    text-align: center; /* Zentrierte Ausrichtung des Texts */
+    background-color: #ADD8E6; 
+    padding: 0px;
+    text-align: center; 
 }
 
-/* Stil für die Navigationselemente im Header */
 nav ul {
-    list-style: none; /* Entfernt Aufzählungspunkte */
-    padding: 0; /* Entfernt Innenabstand des Listencontainers */
+    list-style: none; 
+    padding: 0; 
 }
 
 nav li {
-    display: inline; /* Elemente nebeneinander darstellen */
-    margin: 0 10px; /* Abstand zwischen den Elementen */
+    display: inline; 
+    margin: 0 10px;
 }
 
 nav a {
-    text-decoration: none; /* Entfernt die Unterstreichung von Links */
-    color: #fff; /* Textfarbe der Links */
-    font-family: "Akkurat Pro", sans-serif; /* Verwendete Schriftart */
-    font-size: 16px; /* Schriftgröße der Links */
+    text-decoration: none; 
+    color: #fff;
+    font-family: "Akkurat Pro", sans-serif; 
+    font-size: 16px; 
 }
 
 
@@ -47,38 +46,37 @@ nav a {
     transform: translate(-50%, -50%);
     width: 80%; 
     margin-bottom: 40px;
-    background-attachment: fixed;
-    
+   
 }
 
 #illu img {
-    width: 100%; /* Vollständige Breite des Containers */
-    height: auto; /* Behalte das Seitenverhältnis bei */
+    width: 100%; 
+    height: auto; 
 }
 
 .custom-button {
-    position: absolute; /* Absolute Positionierung im Container */
-    top: 12%; /* Vertikal in der Mitte des Containers */
-    left: 49%; /* Horizontal in der Mitte des Containers */
-    transform: translate(-50%, -50%); /* Zentriert den Button */
+    position: absolute; 
+    top: 12%; 
+    left: 49%; 
+    transform: translate(-50%, -50%); 
     cursor: pointer;
 }
 
 .custom-button2 {
-    position: absolute; /* Absolute Positionierung im Container */
-    top: 75%; /* Vertikal in der Mitte des Containers */
-    left: 65%; /* Horizontal in der Mitte des Containers */
-    transform: translate(-50%, -50%); /* Zentriert den Button */
+    position: absolute; 
+    top: 75%; 
+    left: 65%; 
+    transform: translate(-50%, -50%); 
     cursor: pointer;
 }
 .custom-button3 {
-    position: absolute; /* Absolute Positionierung im Container */
-    top: 80%; /* Vertikal in der Mitte des Containers */
-    left: 45%; /* Horizontal in der Mitte des Containers */
-    transform: translate(-50%, -50%); /* Zentriert den Button */
+    position: absolute; 
+    top: 80%; 
+    left: 45%; 
+    transform: translate(-50%, -50%); 
     cursor: pointer;
 }
-/* Stil für das Popup-Fenster (versteckt es anfänglich) */
+
 #popupContainer {
     display: none;
     position: fixed;
@@ -88,7 +86,7 @@ nav a {
     background-color: #fff;
     font-family: "Akkurat Pro", sans-serif;
     padding: 20px;
-    z-index: 1000; /* Über dem Inhalt anzeigen */
+    z-index: 1000; 
 }
 
 #popupContainer2 {
@@ -100,7 +98,7 @@ nav a {
     background-color: #fff;
     font-family: "Akkurat Pro", sans-serif;
     padding: 20px;
-    z-index: 1000; /* Über dem Inhalt anzeigen */
+    z-index: 1000; 
 }
 #popupContainer3 {
     display: none;
@@ -111,41 +109,10 @@ nav a {
     background-color: #fff;
     font-family: "Akkurat Pro", sans-serif;
     padding: 20px;
-    z-index: 1000; /* Über dem Inhalt anzeigen */
+    z-index: 1000; 
 }
 
-.newsletter-form {
-    text-align: center;
-    font-family: "Akkurat Pro", sans-serif; /* Verwendete Schriftart */
-    font-size: 16px; /* Schriftgröße der Links */
-    margin: 200px;
-    z-index: 1001; 
-}
 
-/* Stil für den Eingabebereich und den Abonnieren-Button */
-#newsletter-form {
-    background-color: rgba(204, 204, 204, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-#email {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-button {
-    background-color: #ADD8E6;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
 body.page-contact #content {
     padding: 40px;
 }
@@ -190,7 +157,7 @@ body.page-contact #contact-form button {
     font-family: "Akkurat Pro", sans-serif;
 }
 #confirmation-message {
-    color: green;
+    color: red;
     font-weight: bold;
     font-family: "Akkurat Pro", sans-serif;
     margin-top: 10px;
@@ -200,7 +167,6 @@ body.page-contact #contact-form button {
     max-width: 800px;
     margin: 20px auto;
 }
-
 .ueberuns h1 {
     color: #333;
     font-family: "Akkurat Pro", sans-serif;
@@ -245,7 +211,7 @@ body.page-contact #contact-form button:hover {
 body.page-ueberuns footer {
     display: none;
 }
-/* Footer-Container mit flexibler Anordnung */
+
 body {
     display: flex;
     flex-direction: column;
@@ -258,13 +224,10 @@ footer {
     color: #fff;
     font-family: "Akkurat Pro", sans-serif; 
     padding: 40px; 
-    display: flex;
-    justify-content: space-between;
-    z-index: 1001;
 }
 
 
-/* Stil für Absatztext */
+
 p {
     margin: 0.5em 0;
 }
@@ -282,4 +245,10 @@ p {
     color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+    #backgroundContainer {
+        height: auto;
+    }
 }
