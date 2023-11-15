@@ -139,8 +139,8 @@ body.page-contact #contact-form label {
     font-family: "Akkurat Pro", sans-serif;
 }
 
-body.page-contact #contact-form input,
-body.page-contact #contact-form textarea {
+body.page-contact #contact-formk input,
+body.page-contact #contact-formk textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 16px;
@@ -148,7 +148,7 @@ body.page-contact #contact-form textarea {
     font-family: "Akkurat Pro", sans-serif;
 }
 
-body.page-contact #contact-form button {
+body.page-contact #contact-formk button {
     background-color: #ADD8E6;
     color: white;
     padding: 0px 50px;
@@ -156,7 +156,7 @@ body.page-contact #contact-form button {
     cursor: pointer;
     font-family: "Akkurat Pro", sans-serif;
 }
-#confirmation-message {
+#confirmation-messagek {
     color: red;
     font-weight: bold;
     font-family: "Akkurat Pro", sans-serif;
@@ -226,8 +226,6 @@ footer {
     padding: 40px; 
 }
 
-
-
 p {
     margin: 0.5em 0;
 }
@@ -251,4 +249,39 @@ p {
     #backgroundContainer {
         height: auto;
     }
+}
+.newsletter-form {
+    text-align: center;
+}
+
+#newsletter-form {
+    background-color: #ffffff;
+    padding: 80px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Akkurat Pro", sans-serif; 
+}
+
+#email {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ADD8E6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: "Akkurat Pro", sans-serif; 
+}
+
+#confirmation-message {
+    color: FF0000;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: "Akkurat Pro", sans-serif; 
 }

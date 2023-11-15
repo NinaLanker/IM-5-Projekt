@@ -46,44 +46,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    document.getElementById("newsletter-form").addEventListener("submit", function (event) {
-        event.preventDefault();
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("newsletter-form").addEventListener("submit", function (event) {
+            event.preventDefault();
     
-        // Daten aus den Formularfeldern sammeln
-        var vorname = document.getElementById("vorname").value;
-        var nachname = document.getElementById("nachname").value;
-        var email = document.getElementById("email").value;
+          
+            var email = document.getElementById("email").value;
     
-        // Meldung anzeigen (kann durch tatsächlichen Datenversand ersetzt werden)
-        showNotification("Vielen Dank für deine Anmeldung!");
+        
     
-        // Überprüfe, ob die Bestätigungsnachricht bereits gezeigt wurde
-        var isConfirmationShown = sessionStorage.getItem("confirmationShown");
+          
+            showConfirmationMessage();
+        });
     
-        // Wenn die Bestätigungsnachricht noch nicht gezeigt wurde, zeige sie an
-        if (!isConfirmationShown) {
-            // Benachrichtigung anzeigen (kann durch tatsächlichen Datenversand ersetzt werden)
-            showNotification("Vielen Dank für deine Anmeldung!");
+        function showConfirmationMessage() {
+         
+            document.getElementById("newsletter-form").style.display = "none";
     
-            // Setze in der Session Storage, dass die Bestätigungsnachricht gezeigt wurde
-            sessionStorage.setItem("confirmationShown", "true");
+          
+            var confirmationMessage = document.getElementById("confirmation-message");
+            confirmationMessage.style.display = "block";
         }
     });
     
-    function showNotification(message) {
-        // Erstelle eine Benachrichtigungsbox
-        var notificationBox = document.createElement("div");
-        notificationBox.className = "notification";
-        notificationBox.textContent = message;
-    
-        // Füge die Benachrichtigungsbox zum Dokument hinzu
-        document.body.appendChild(notificationBox);
-    
-        // Schließe die Benachrichtigung nach 3 Sekunden
-        setTimeout(function () {
-            document.body.removeChild(notificationBox);
-        }, 3000);
-    }
     
     document.addEventListener("DOMContentLoaded", function () {
         var body = document.body;
@@ -97,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     
         var contactForm = document.getElementById("contact-form");
-        var confirmationMessage = document.getElementById("confirmation-message");
+        var confirmationMessage = document.getElementById("confirmation-messagek");
     
         // Überprüfe, ob die Bestätigungsnachricht in der Session Storage gespeichert ist
         var isConfirmationShown = sessionStorage.getItem("confirmationShown");
