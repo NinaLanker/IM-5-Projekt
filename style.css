@@ -1,11 +1,10 @@
 #backgroundContainer {
-    background-color: #ADD8E6; 
     background-image: url('wolken.gif');
-     background-attachment: fixed;  
+    background-attachment: fixed;  
     background-position: center top; 
     background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 300px;
 }
 
 body, p, h1, nav a {
@@ -13,6 +12,7 @@ body, p, h1, nav a {
     font-family: "Akkurat Pro", sans-serif; 
     font-size: 20px; 
 }
+
 header {
     position: sticky;
     top: 0;
@@ -37,7 +37,6 @@ nav a {
     font-family: "Akkurat Pro", sans-serif; 
     font-size: 16px; 
 }
-
 
 #illu {
     position: absolute;
@@ -95,7 +94,6 @@ nav a {
     padding: 20px;
     z-index: 1000; 
 }
-
 #popupContainer2 {
     display: none;
     position: fixed;
@@ -118,7 +116,6 @@ nav a {
     padding: 20px;
     z-index: 1000; 
 }
-
 #popupContainer4 {
     display: none;
     position: fixed;
@@ -134,7 +131,6 @@ nav a {
 body.page-contact #content {
     padding: 40px;
 }
-
 body.page-contact #content h1 {
     color: #333;
     font-family: "Akkurat Pro", sans-serif;
@@ -145,13 +141,13 @@ body.page-contact #content p {
     font-family: "Akkurat Pro", sans-serif;
 }
 
-body.page-contact #contact-form {
+body.page-contact #contact-formk {
     max-width: 400px;
     margin: 20px auto;
     font-family: "Akkurat Pro", sans-serif;
 }
 
-body.page-contact #contact-form label {
+body.page-contact #contact-formk label {
     display: block;
     margin-bottom: 8px;
     font-family: "Akkurat Pro", sans-serif;
@@ -173,6 +169,9 @@ body.page-contact #contact-formk button {
     border: none;
     cursor: pointer;
     font-family: "Akkurat Pro", sans-serif;
+}
+body.page-contact #contact-formk button:hover {
+    background-color: #FF0000; 
 }
 #confirmation-messagek {
     color: red;
@@ -223,7 +222,7 @@ body.page-contact #contact-form button:hover {
     font-family: "Akkurat Pro", sans-serif;
   }
 
-  body.page-contact footer {
+body.page-contact footer {
     display: none;
 }
 body.page-ueberuns footer {
@@ -235,13 +234,6 @@ body {
     flex-direction: column;
     min-height: 100vh; 
     margin: 0; 
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    font-family: "Akkurat Pro", sans-serif; 
-    padding: 40px; 
 }
 
 p {

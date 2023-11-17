@@ -66,12 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("newsletter-form").addEventListener("submit", function (event) {
             event.preventDefault();
     
-          
             var email = document.getElementById("email").value;
-    
-        
-    
-          
+
             showConfirmationMessage();
         });
     
