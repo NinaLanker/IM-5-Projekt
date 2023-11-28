@@ -12,5 +12,5 @@ Noch eine Challenge war es die beiden Kontaktformulare richtig zu programmieren,
 ### Learnings
 Ich habe zwei Learnings aus dem Projekt. Das erste, dass ich von Anfang an meine Webseite responsiv gestalte und die entsprechenden Codes einarbeite. Das zweite, dass ich die Kontaktformulare in JS sorgfältiger schreibe und der Code immer pflege.
 ### Quellen
-* Chat CPT online Verfügbar unter (https://chat.openai.com/)
+* Chatgpt online Verfügbar unter (https://chat.openai.com/)
 * Eigene Zusammenfassung der Unterlagen aus dem Unterricht 
