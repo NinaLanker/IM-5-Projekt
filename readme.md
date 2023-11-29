@@ -1,4 +1,3 @@
-### Angebote Säntis 
 Der Auftrag für den Leistungsnachweis im Modul Interaktive Medien 5 ist eine Webseite, welche mit den vorherigen erlernten Programmiersprachen von den Semestern 1-4, programmiert wird. Das Thema der Webseite soll sich auf das Bachelorarbeit im 6. Semester beziehen. Bei mir geht es darum, die Kommunikation der Angebote einer Bergbahn attraktiver zu gestalten. 
 ### Vorgehensweise
 Zuerst habe ich mir überlegt, wie ich als Kundin die Angebote am besten und übersichtlichsten präsentiert haben möchte. Dann ist mir sofort eine interaktive Map in den Sinn gekommen, welche klickbar ist. Nach einer Recherche für das Bachelor-Poster habe ich dann herausgefunden, dass die Bergbahn Mayrhofner eine ähnliche hat. Deshalb habe ich mir diese als Inspiration genommen.
